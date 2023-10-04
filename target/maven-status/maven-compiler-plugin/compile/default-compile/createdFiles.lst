@@ -1,5 +1,5 @@
-com\example\demo\UserController.class
-com\example\demo\UserServiceApplication.class
-com\example\demo\Users.class
-com\example\demo\UserRepository.class
-com\example\demo\UserService.class
+com\example\demo\Person.class
+com\example\demo\PersonServiceApplication.class
+com\example\demo\PersonController.class
+com\example\demo\PersonRepository.class
+com\example\demo\PersonService.class
