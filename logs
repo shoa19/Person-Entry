@@ -1,0 +1,418 @@
+Attaching to docker-postgres-springboot-demo-app, docker-postgres-springboot-demo-db
+docker-postgres-springboot-demo-db   | 
+docker-postgres-springboot-demo-db   | PostgreSQL Database directory appears to contain a database; Skipping initialization
+docker-postgres-springboot-demo-db   | 
+docker-postgres-springboot-demo-app  | 
+docker-postgres-springboot-demo-app  |   .   ____          _            __ _ _
+docker-postgres-springboot-demo-app  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+docker-postgres-springboot-demo-app  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+docker-postgres-springboot-demo-app  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+docker-postgres-springboot-demo-app  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+docker-postgres-springboot-demo-app  |  =========|_|==============|___/=/_/_/_/
+docker-postgres-springboot-demo-app  |  :: Spring Boot ::                (v3.1.3)
+docker-postgres-springboot-demo-app  | 
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:07.129Z  INFO 1 --- [           main] c.example.demo.UserServiceApplication    : Starting UserServiceApplication v0.0.1-SNAPSHOT using Java 21-ea with PID 1 (/app.jar started by root in /)
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:07.133Z  INFO 1 --- [           main] c.example.demo.UserServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:08.069Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:08.142Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interfaces.
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:08.817Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:08.833Z  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:08.833Z  INFO 1 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:08.940Z  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:08.941Z  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1707 ms
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:09.147Z  INFO 1 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:09.243Z  INFO 1 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:09.246Z  INFO 1 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:09.437Z  INFO 1 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:09.583Z  INFO 1 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:09.603Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:09.766Z  INFO 1 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63fd4873
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:09.769Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:10.081Z  INFO 1 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:10.803Z  INFO 1 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:10.865Z  INFO 1 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:11.181Z  WARN 1 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:11.586Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+docker-postgres-springboot-demo-app  | 2023-09-21T06:49:11.597Z  INFO 1 --- [           main] c.example.demo.UserServiceApplication    : Started UserServiceApplication in 4.974 seconds (process running for 5.58)
+docker-postgres-springboot-demo-app  | 2023-09-21T06:59:51.609Z  INFO 1 --- [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+docker-postgres-springboot-demo-app  | 2023-09-21T06:59:51.610Z  INFO 1 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+docker-postgres-springboot-demo-app  | 2023-09-21T06:59:51.614Z  INFO 1 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+docker-postgres-springboot-demo-app  | user created manish
+docker-postgres-springboot-demo-app  | user created manish
+clever_antonelli                     | 
+clever_antonelli                     |   .   ____          _            __ _ _
+clever_antonelli                     |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+clever_antonelli                     | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+clever_antonelli                     |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+clever_antonelli                     |   '  |____| .__|_| |_|_| |_\__, | / / / /
+clever_antonelli                     |  =========|_|==============|___/=/_/_/_/
+clever_antonelli                     |  :: Spring Boot ::                (v3.1.3)
+clever_antonelli                     | 
+clever_antonelli                     | 2023-09-21T07:18:18.342Z  INFO 1 --- [           main] c.example.demo.UserServiceApplication    : Starting UserServiceApplication v0.0.1-SNAPSHOT using Java 21-ea with PID 1 (/app.jar started by root in /)
+clever_antonelli                     | 2023-09-21T07:18:18.355Z  INFO 1 --- [           main] c.example.demo.UserServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+clever_antonelli                     | 2023-09-21T07:18:20.237Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+clever_antonelli                     | 2023-09-21T07:18:20.361Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104 ms. Found 1 JPA repository interfaces.
+clever_antonelli                     | 2023-09-21T07:18:21.545Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+clever_antonelli                     | 2023-09-21T07:18:21.566Z  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+clever_antonelli                     | 2023-09-21T07:18:21.566Z  INFO 1 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+clever_antonelli                     | 2023-09-21T07:18:21.752Z  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+clever_antonelli                     | 2023-09-21T07:18:21.756Z  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3189 ms
+clever_antonelli                     | 2023-09-21T07:18:22.137Z  INFO 1 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+clever_antonelli                     | 2023-09-21T07:18:22.325Z  INFO 1 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+clever_antonelli                     | 2023-09-21T07:18:22.335Z  INFO 1 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+clever_antonelli                     | 2023-09-21T07:18:22.702Z  INFO 1 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+clever_antonelli                     | 2023-09-21T07:18:23.062Z  INFO 1 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+clever_antonelli                     | 2023-09-21T07:18:23.114Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+clever_antonelli                     | 2023-09-21T07:18:28.210Z ERROR 1 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+clever_antonelli                     | 
+clever_antonelli                     | org.postgresql.util.PSQLException: The connection attempt failed.
+clever_antonelli                     | 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:354) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.Driver.makeConnection(Driver.java:443) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.Driver.connect(Driver.java:297) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:316) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:152) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:230) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:198) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1155) ~[spring-context-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932) ~[spring-context-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at com.example.demo.UserServiceApplication.main(UserServiceApplication.java:8) ~[classes!/:0.0.1-SNAPSHOT]
+clever_antonelli                     | 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+clever_antonelli                     | 	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+clever_antonelli                     | 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[app.jar:0.0.1-SNAPSHOT]
+clever_antonelli                     | 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[app.jar:0.0.1-SNAPSHOT]
+clever_antonelli                     | 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[app.jar:0.0.1-SNAPSHOT]
+clever_antonelli                     | 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[app.jar:0.0.1-SNAPSHOT]
+clever_antonelli                     | Caused by: java.net.UnknownHostException: docker-postgres-springboot-demo-db
+clever_antonelli                     | 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:562) ~[na:na]
+clever_antonelli                     | 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+clever_antonelli                     | 	at java.base/java.net.Socket.connect(Socket.java:751) ~[na:na]
+clever_antonelli                     | 	at org.postgresql.core.PGStream.createSocket(PGStream.java:243) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.core.PGStream.<init>(PGStream.java:98) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	... 54 common frames omitted
+clever_antonelli                     | 
+clever_antonelli                     | 2023-09-21T07:18:28.226Z  WARN 1 --- [           main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+clever_antonelli                     | 
+clever_antonelli                     | org.postgresql.util.PSQLException: The connection attempt failed.
+clever_antonelli                     | 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:354) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.Driver.makeConnection(Driver.java:443) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.Driver.connect(Driver.java:297) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:316) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:152) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:230) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:198) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1155) ~[spring-context-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932) ~[spring-context-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at com.example.demo.UserServiceApplication.main(UserServiceApplication.java:8) ~[classes!/:0.0.1-SNAPSHOT]
+clever_antonelli                     | 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+clever_antonelli                     | 	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+clever_antonelli                     | 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[app.jar:0.0.1-SNAPSHOT]
+clever_antonelli                     | 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[app.jar:0.0.1-SNAPSHOT]
+clever_antonelli                     | 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[app.jar:0.0.1-SNAPSHOT]
+clever_antonelli                     | 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[app.jar:0.0.1-SNAPSHOT]
+clever_antonelli                     | Caused by: java.net.UnknownHostException: docker-postgres-springboot-demo-db
+clever_antonelli                     | 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:562) ~[na:na]
+clever_antonelli                     | 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+clever_antonelli                     | 	at java.base/java.net.Socket.connect(Socket.java:751) ~[na:na]
+clever_antonelli                     | 	at org.postgresql.core.PGStream.createSocket(PGStream.java:243) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.core.PGStream.<init>(PGStream.java:98) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	... 54 common frames omitted
+clever_antonelli                     | 
+clever_antonelli                     | 2023-09-21T07:18:28.791Z  INFO 1 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+clever_antonelli                     | 2023-09-21T07:18:30.070Z  INFO 1 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+clever_antonelli                     | 2023-09-21T07:18:30.100Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+clever_antonelli                     | 2023-09-21T07:18:31.103Z ERROR 1 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+clever_antonelli                     | 
+clever_antonelli                     | org.postgresql.util.PSQLException: The connection attempt failed.
+clever_antonelli                     | 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:354) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.Driver.makeConnection(Driver.java:443) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.Driver.connect(Driver.java:297) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:316) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.getIsolatedConnection(GenerationTargetToDatabase.java:60) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:110) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:77) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:235) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:219) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropTables(SchemaDropperImpl.java:362) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropConstraintsTablesSequences(SchemaDropperImpl.java:253) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:215) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:185) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:155) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:115) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:242) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at java.base/java.util.HashMap.forEach(HashMap.java:1429) ~[na:na]
+clever_antonelli                     | 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:292) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1455) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1155) ~[spring-context-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932) ~[spring-context-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at com.example.demo.UserServiceApplication.main(UserServiceApplication.java:8) ~[classes!/:0.0.1-SNAPSHOT]
+clever_antonelli                     | 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+clever_antonelli                     | 	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+clever_antonelli                     | 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[app.jar:0.0.1-SNAPSHOT]
+clever_antonelli                     | 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[app.jar:0.0.1-SNAPSHOT]
+clever_antonelli                     | 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[app.jar:0.0.1-SNAPSHOT]
+clever_antonelli                     | 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[app.jar:0.0.1-SNAPSHOT]
+clever_antonelli                     | Caused by: java.net.UnknownHostException: docker-postgres-springboot-demo-db
+clever_antonelli                     | 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:562) ~[na:na]
+clever_antonelli                     | 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+clever_antonelli                     | 	at java.base/java.net.Socket.connect(Socket.java:751) ~[na:na]
+clever_antonelli                     | 	at org.postgresql.core.PGStream.createSocket(PGStream.java:243) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.core.PGStream.<init>(PGStream.java:98) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	... 63 common frames omitted
+clever_antonelli                     | 
+clever_antonelli                     | 2023-09-21T07:18:31.107Z  WARN 1 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08001
+clever_antonelli                     | 2023-09-21T07:18:31.108Z ERROR 1 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : The connection attempt failed.
+clever_antonelli                     | 2023-09-21T07:18:31.119Z ERROR 1 --- [           main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [The connection attempt failed.] [n/a]
+clever_antonelli                     | 2023-09-21T07:18:31.120Z  WARN 1 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [The connection attempt failed.] [n/a]
+clever_antonelli                     | 2023-09-21T07:18:31.126Z  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+clever_antonelli                     | 2023-09-21T07:18:31.153Z  INFO 1 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+clever_antonelli                     | 
+clever_antonelli                     | Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+clever_antonelli                     | 2023-09-21T07:18:31.217Z ERROR 1 --- [           main] o.s.boot.SpringApplication               : Application run failed
+clever_antonelli                     | 
+clever_antonelli                     | org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [The connection attempt failed.] [n/a]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1155) ~[spring-context-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932) ~[spring-context-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.3.jar!/:3.1.3]
+clever_antonelli                     | 	at com.example.demo.UserServiceApplication.main(UserServiceApplication.java:8) ~[classes!/:0.0.1-SNAPSHOT]
+clever_antonelli                     | 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+clever_antonelli                     | 	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+clever_antonelli                     | 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[app.jar:0.0.1-SNAPSHOT]
+clever_antonelli                     | 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[app.jar:0.0.1-SNAPSHOT]
+clever_antonelli                     | 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[app.jar:0.0.1-SNAPSHOT]
+clever_antonelli                     | 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[app.jar:0.0.1-SNAPSHOT]
+clever_antonelli                     | Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [The connection attempt failed.] [n/a]
+clever_antonelli                     | 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	... 22 common frames omitted
+clever_antonelli                     | Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [The connection attempt failed.] [n/a]
+clever_antonelli                     | 	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:98) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:56) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.getIsolatedConnection(GenerationTargetToDatabase.java:60) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:110) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:77) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:235) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:219) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropTables(SchemaDropperImpl.java:362) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropConstraintsTablesSequences(SchemaDropperImpl.java:253) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:215) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:185) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:155) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:115) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:242) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at java.base/java.util.HashMap.forEach(HashMap.java:1429) ~[na:na]
+clever_antonelli                     | 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:292) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1455) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.11.jar!/:6.0.11]
+clever_antonelli                     | 	... 26 common frames omitted
+clever_antonelli                     | Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+clever_antonelli                     | 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:354) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.Driver.makeConnection(Driver.java:443) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.Driver.connect(Driver.java:297) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-5.0.1.jar!/:na]
+clever_antonelli                     | 	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:316) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+clever_antonelli                     | 	... 49 common frames omitted
+clever_antonelli                     | Caused by: java.net.UnknownHostException: docker-postgres-springboot-demo-db
+clever_antonelli                     | 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:562) ~[na:na]
+clever_antonelli                     | 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+clever_antonelli                     | 	at java.base/java.net.Socket.connect(Socket.java:751) ~[na:na]
+clever_antonelli                     | 	at org.postgresql.core.PGStream.createSocket(PGStream.java:243) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.core.PGStream.<init>(PGStream.java:98) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258) ~[postgresql-42.6.0.jar!/:42.6.0]
+clever_antonelli                     | 	... 63 common frames omitted
+clever_antonelli                     | 
+clever_antonelli exited with code 1
+clever_antonelli                     | 
+clever_antonelli                     |   .   ____          _            __ _ _
+clever_antonelli                     |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+clever_antonelli                     | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+clever_antonelli                     |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+clever_antonelli                     |   '  |____| .__|_| |_|_| |_\__, | / / / /
+clever_antonelli                     |  =========|_|==============|___/=/_/_/_/
+clever_antonelli                     |  :: Spring Boot ::                (v3.1.3)
+clever_antonelli                     | 
+clever_antonelli                     | 2023-09-21T07:19:57.907Z  INFO 1 --- [           main] c.example.demo.UserServiceApplication    : Starting UserServiceApplication v0.0.1-SNAPSHOT using Java 21-ea with PID 1 (/app.jar started by root in /)
+clever_antonelli                     | 2023-09-21T07:19:57.912Z  INFO 1 --- [           main] c.example.demo.UserServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+clever_antonelli                     | 2023-09-21T07:19:59.342Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+clever_antonelli                     | 2023-09-21T07:19:59.461Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 1 JPA repository interfaces.
+clever_antonelli                     | 2023-09-21T07:20:00.783Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+clever_antonelli                     | 2023-09-21T07:20:00.808Z  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+clever_antonelli                     | 2023-09-21T07:20:00.809Z  INFO 1 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+clever_antonelli                     | 2023-09-21T07:20:00.978Z  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+clever_antonelli                     | 2023-09-21T07:20:00.980Z  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2961 ms
+clever_antonelli                     | 2023-09-21T07:20:01.291Z  INFO 1 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+clever_antonelli                     | 2023-09-21T07:20:01.422Z  INFO 1 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+clever_antonelli                     | 2023-09-21T07:20:01.428Z  INFO 1 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+clever_antonelli                     | 2023-09-21T07:20:01.724Z  INFO 1 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+clever_antonelli                     | 2023-09-21T07:20:02.010Z  INFO 1 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+clever_antonelli                     | 2023-09-21T07:20:02.042Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+clever_antonelli                     | 2023-09-21T07:20:02.307Z  INFO 1 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1e11bc55
+clever_antonelli                     | 2023-09-21T07:20:02.312Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+clever_antonelli                     | 2023-09-21T07:20:02.788Z  INFO 1 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+clever_antonelli                     | 2023-09-21T07:20:03.904Z  INFO 1 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+clever_antonelli                     | 2023-09-21T07:20:04.001Z  INFO 1 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+clever_antonelli                     | 2023-09-21T07:20:04.607Z  WARN 1 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+clever_antonelli                     | 2023-09-21T07:20:05.191Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+clever_antonelli                     | 2023-09-21T07:20:05.209Z  INFO 1 --- [           main] c.example.demo.UserServiceApplication    : Started UserServiceApplication in 8.212 seconds (process running for 9.24)
+docker-postgres-springboot-demo-app  | user created manish
+docker-postgres-springboot-demo-app  | user created manish
+clever_antonelli                     | 2023-09-21T07:20:28.227Z  INFO 1 --- [nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+clever_antonelli                     | 2023-09-21T07:20:28.228Z  INFO 1 --- [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+clever_antonelli                     | 2023-09-21T07:20:28.232Z  INFO 1 --- [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+clever_antonelli                     | 2023-09-21T12:49:55.006Z  WARN 1 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s591ms450µs666ns).
