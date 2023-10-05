@@ -4,7 +4,7 @@ services:
 
   springBootApp:
 
-    image: shoaibps19/person-entry:1.0
+    image: shoaibps19/person-entry:1.1
 
     container_name: docker-postgres-springboot-midproject-demo-app
 
@@ -30,7 +30,7 @@ services:
 
     image: postgres:13.2
 
-    container_name: docker-postgres-springboot-demo-db
+    container_name: docker-postgres-springboot-midproject-demo-db
 
     ports:
 
@@ -46,11 +46,11 @@ services:
 
     environment:
 
-      - POSTGRES_USER=person-entry
+      - POSTGRES_USER=postgres
 
       - POSTGRES_PASSWORD=Sapient@1910
 
-      - POSTGRES_DB=person-entry
+      - POSTGRES_DB=person
 
 networks:
 
