@@ -30,7 +30,7 @@ services:
 
     image: postgres:13.2
 
-    container_name: docker-postgres-springboot-midproject-demo-db
+    container_name: docker-postgres-springboot-midprojectdemo-db
 
     ports:
 
@@ -50,7 +50,7 @@ services:
 
       - POSTGRES_PASSWORD=Sapient@1910
 
-      - POSTGRES_DB=person
+      - POSTGRES_DB=person-entrry
 
 networks:
 
